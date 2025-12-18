@@ -1,4 +1,4 @@
-package design.patterns.creational.factory;
+package design.patterns.creational.abstractFactory;
 
 import design.patterns.creational.factory.bike.Bike;
 import design.patterns.creational.factory.bike.CbShine;
@@ -7,7 +7,7 @@ import design.patterns.creational.factory.car.Alto;
 import design.patterns.creational.factory.car.Car;
 import design.patterns.creational.factory.car.I10;
 
-public class PetrolVehicleFactory implements VehicleFactory{
+public class PetrolVehicleFactory implements VehicleFactory {
     @Override
     public Car getCar(String carName) {
         if("Alto".equals(carName)){

@@ -1,6 +1,6 @@
 package design.patterns.creational.factory.bike;
 
-public class HeroSplendor implements Bike {
+public class HeroSplendor implements design.patterns.creational.factory.bike.Bike {
     @Override
     public void mySpecifications() {
         System.out.println("Hello I am Hero Splendor, I am the king of rural india");

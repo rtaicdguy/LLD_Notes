@@ -1,9 +1,13 @@
-package design.patterns.creational.factory;
+package design.patterns.creational.abstractFactory;
 
-import design.patterns.creational.factory.bike.*;
-import design.patterns.creational.factory.car.*;
+import design.patterns.creational.factory.bike.Ather;
+import design.patterns.creational.factory.bike.Bike;
+import design.patterns.creational.factory.bike.OlaElectric;
+import design.patterns.creational.factory.car.Car;
+import design.patterns.creational.factory.car.MgHector;
+import design.patterns.creational.factory.car.NexonEv;
 
-public class EvVehicleFactory implements VehicleFactory{
+public class EvVehicleFactory implements VehicleFactory {
     @Override
     public Car getCar(String carName) {
         if("MgHector".equals(carName)){

@@ -1,4 +1,4 @@
-package design.patterns.creational.factory;
+package design.patterns.creational.abstractFactory;
 
 import design.patterns.creational.factory.bike.Bike;
 import design.patterns.creational.factory.car.Car;
