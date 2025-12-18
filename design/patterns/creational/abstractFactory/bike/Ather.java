@@ -1,6 +1,10 @@
-package design.patterns.creational.factory.bike;
+package design.patterns.creational.abstractFactory.bike;
 
-public class Ather implements design.patterns.creational.factory.bike.Bike {
+/**
+ * Concrete Product: Ather - An electric bike.
+ * Implements the Bike interface.
+ */
+public class Ather implements Bike {
     @Override
     public void mySpecifications() {
         System.out.println("Hello I am Ather,I am the reliable EV King!");

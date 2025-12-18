@@ -1,6 +1,10 @@
-package design.patterns.creational.factory.car;
+package design.patterns.creational.abstractFactory.car;
 
-public class Alto implements design.patterns.creational.factory.car.Car {
+/**
+ * Concrete Product: Alto - A petrol car.
+ * Implements the Car interface.
+ */
+public class Alto implements Car {
     @Override
     public void mySpecifications() {
         System.out.println("Hello, I am Alto, I dont have AC, it have manual windows.");

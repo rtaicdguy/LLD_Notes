@@ -1,6 +1,10 @@
-package design.patterns.creational.factory.car;
+package design.patterns.creational.abstractFactory.car;
 
-public class MgHector implements design.patterns.creational.factory.car.Car {
+/**
+ * Concrete Product: MgHector - An electric car.
+ * Implements the Car interface.
+ */
+public class MgHector implements Car {
     @Override
     public void mySpecifications() {
         System.out.println("Hello I am MG Hector, I am EV Car, I have automated features");

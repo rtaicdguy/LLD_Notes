@@ -1,5 +1,9 @@
-package design.patterns.creational.factory.bike;
+package design.patterns.creational.abstractFactory.bike;
 
+/**
+ * Product interface for Bike family.
+ * Part of the Abstract Factory pattern.
+ */
 public interface Bike {
     void mySpecifications();
 }
