@@ -18,6 +18,8 @@ public class UserServiceProxy implements UserService {
         }
 
         // Virtual proxy (lazy initialization)
+        //We do this so that we avoid creating UserServiceImpl() object if not require
+        //and hence prevent expensive db call if not required.
         if (realService == null) {
             realService = new UserServiceImpl();
         }

@@ -1,11 +1,11 @@
 package design.patterns.structural.proxy;
 
-public class ProxyDemo {
+public class Main {
 
     public static void main(String[] args) {
 
-        UserService adminService =
-                new UserServiceProxy(true);
+        UserService adminService = new UserServiceProxy(true);
+        //UserService adminService = new UserServiceImpl();
 
         User user = adminService.getUserById("U123");
         System.out.println(user);
