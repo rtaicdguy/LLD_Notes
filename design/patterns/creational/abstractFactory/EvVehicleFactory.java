@@ -6,14 +6,17 @@ import design.patterns.creational.factory.bike.OlaElectric;
 import design.patterns.creational.factory.car.Car;
 import design.patterns.creational.factory.car.MgHector;
 import design.patterns.creational.factory.car.NexonEv;
+import static design.patterns.creational.abstractFactory.Constants.*;
+
 
 public class EvVehicleFactory implements VehicleFactory {
+
     @Override
     public Car getCar(String carName) {
-        if("MgHector".equals(carName)){
+        if(MG_HECTOR.equals(carName)){
             return new MgHector();
         }
-        if("NexonEv".equals(carName)){
+        if(NEXON_EV.equals(carName)){
             return new NexonEv();
         }
         return null;
@@ -21,10 +24,10 @@ public class EvVehicleFactory implements VehicleFactory {
 
     @Override
     public Bike getBike(String bike) {
-        if("OlaElectric".equals(bike)){
+        if(OLA_ELECTRIC.equals(bike)){
             return new OlaElectric();
         }
-        if("Ather".equals(bike)){
+        if(ATHER.equals(bike)){
             return new Ather();
         }
         return null;
